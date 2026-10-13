@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "Day-04-AI-driven Unified Endpoint Management with Microsoft Intune Suite",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/gettingstarted04.md", 
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2017%20-%20Configuring%20and%20validating%20device%20compliance/Lab%2017%20-%20Configuring%20and%20validating%20device%20compliance.md", 
+         "Order": 2
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2018%20-%20Configure%20App%20Protection%20Policies%20for%20Mobile%20Devices/Lab%2018%20-%20Configure%20App%20Protection%20Policies%20for%20Mobile%20Devices.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2019%20-%20Configure%20VPN%20Policies%20for%20Android%20Devices/Lab%2019%20-%20Configure%20VPN%20Policies%20for%20Android%20Devices.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2020%20-%20Using%20a%20Configuring%20Profile%20to%20configure%20iOS%20and%20iPadOS%20Wi-Fi%20settings/Lab%2020%20-%20Using%20a%20Configuring%20Profile%20to%20configure%20iOS%20and%20iPadOS%20Wi-Fi%20settings.md",
+        "Order": 5
+      }
+    ]
+  }
+]

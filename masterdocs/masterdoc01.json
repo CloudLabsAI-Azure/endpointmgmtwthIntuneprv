@@ -1,0 +1,29 @@
+[
+  {
+    "Name": "Day-01-AI-driven Unified Endpoint Management with Microsoft Intune Suite",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/gettingstarted01.md", 
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%201-Set%20up%20Microsoft%20Intune/Lab%201-Set%20up%20Microsoft%20Intune.md", 
+         "Order": 2
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%202%20-%20Manage%20Microsoft%20Entra%20Device%20registration/Lab%202%20-%20Manage%20Microsoft%20Entra%20Device%20registration.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%203%20-%20Manage%20Device%20Enrollment%20into%20Microsoft%20Intune/Lab%203%20-%20Manage%20Device%20Enrollment%20into%20Microsoft%20Intune.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%204%20-%20Enrolling%20devices%20into%20Microsoft%20Intune/Lab%204%20-%20Enrolling%20devices%20into%20Microsoft%20Intune.md",
+        "Order": 5
+      }
+      
+    ]
+  }
+]

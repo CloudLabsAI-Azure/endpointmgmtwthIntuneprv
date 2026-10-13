@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "Day-03-AI-driven Unified Endpoint Management with Microsoft Intune Suite",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/gettingstarted03.md", 
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2012%20–%20Configuring%20Enterprise%20Application%20Management%20(EAM)/Lab%2012%20–%20Configuring%20Enterprise%20Application%20Management%20EAM.md", 
+         "Order": 2
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2013%20–%20Enabling%20Remote%20Help/Lab%2013%20–%20Enabling%20Remote%20Help.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2014%20-%20Monitoring%20device%20performance%20and%20user%20experience%20with%20Endpoint%20analytics/Lab%2014%20-%20Monitoring%20device%20performance%20and%20user%20experience%20with%20Endpoint%20analytics.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2015%20–%20Advanced%20Analytics%20and%20Reporting%20in%20Intune/Lab%2015%20–%20Advanced%20Analytics%20and%20Reporting%20in%20Intune.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2016%20–%20Exploring%20Copilot%20in%20Intune/Lab%2016%20–%20Exploring%20Copilot%20in%20Intune.md",
+        "Order": 6
+      }
+    ]
+  }
+]
