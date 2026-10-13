@@ -1,0 +1,40 @@
+[
+  {
+    "Name": "Day-02-AI-driven Unified Endpoint Management with Microsoft Intune Suite",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/gettingstarted02.md", 
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%205%20-%20Integrate%20Microsoft%20Defender%20for%20Endpoint%20with%20Intune/Lab%205%20-%20Integrate%20Microsoft%20Defender%20for%20Endpoint%20with%20Intune.md", 
+         "Order": 2
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%206%20-%20Creating%20and%20Deploying%20Configuration%20Profiles/Lab%206%20-%20Creating%20and%20Deploying%20Configuration%20Profiles.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%207%20-%20Configuring%20Endpoint%20security%20using%20Microsoft%20Intune/Lab%207%20-%20Configuring%20Endpoint%20security%20using%20Microsoft%20Intune.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%208%20-%20Configure%20Update%20Management/Lab%208%20-%20Configure%20Update%20Management.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%209%20-%20Enable%20Endpoint%20DLP%20in%20Microsoft%20Intune/Lab%209%20-%20Enable%20Endpoint%20DLP%20in%20Microsoft%20Intune.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2010%20-%20Enable%20Mobile%20Application%20Management%20(MAM)/Lab%2010%20-%20Enable%20Mobile%20Application%20Management%20MAM.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/endpointmgmtwthIntuneprv/refs/heads/main/instructions/labs/Lab%2011.Configure%20Endpoint%20Privilege%20Management/Lab%2011.Configure%20Endpoint%20Privilege%20Management.md",
+        "Order": 8
+      }
+    ]
+  }
+]
