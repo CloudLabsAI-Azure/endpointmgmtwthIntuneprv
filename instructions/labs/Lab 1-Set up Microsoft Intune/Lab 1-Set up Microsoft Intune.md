@@ -32,7 +32,7 @@ You've also been told that several more employees will be hired over the next co
 
     ![](media/media/image2.png)
 
-    ![](media/media/image3.png)
+    ![](media/media/image3.png) 
 
     > **Note:** Take note of the users that already exist as members. Each user is enabled as indicated on the Account enabled column. The On-premises synced enabled column states No for all current users. This indicates that each user was created directly and is not synchronized from an on-premises directory service.
 
