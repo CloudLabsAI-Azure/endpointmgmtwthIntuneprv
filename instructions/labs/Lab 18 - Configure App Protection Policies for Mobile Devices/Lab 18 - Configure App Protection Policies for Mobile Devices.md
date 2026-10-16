@@ -6,11 +6,9 @@ In this lab, you will configure an App protection policy for iOS/iPadOS devices 
 
 ### Prerequisites
 
-The following lab(s) must be completed before this lab:
+Your lab environment provides **LabVM** and **Demo User 01**, a user licensed for Microsoft Intune and Exchange Online. Its **User 01 UPN** and **User 01 Password** (a Temporary Access Pass) are on the **Environment** tab.
 
-- Lab #1-Set up Microsoft Intune
-- Lab #3-Manage Device Enrollment into Microsoft Intune
-- Lab #10-Enable Mobile Application Management (MAM) *(recommended — creates the **Contoso MAM Users** group)*
+The policy in this lab is assigned to a group, and that group does not exist yet. Create it in **Task 0**.
 
 Optional: an iPhone or iPad with **Microsoft Outlook** installed, if you want to test the policy on a device (Task 3).
 
@@ -23,13 +21,31 @@ All of the developers at Contoso have iPhones and iPads running the latest iOS/i
 - Only policy managed apps can cut, copy, or paste with Outlook.
 - Users must provide their work or school account credentials for access to Outlook.
 
+### Task 0: Create the Contoso MAM Users group
+
+App protection policies and Conditional Access policies apply to **users**, not devices. You create a pilot group and add the test user.
+
+1. On **LabVM**, open **Microsoft Edge**, go to **https://intune.microsoft.com**, and sign in with the **Username** and **Temporary Access Pass** from the **Environment** tab (if you are not already signed in).
+
+2. Select **Groups**, and then **New group**.
+
+3. Provide the following values:
+
+    - Group type: **Security**
+    - Group name: **Contoso MAM Users**
+    - Membership type: **Assigned**
+
+4. Under **Members**, select **No members selected**. Search for and select **Demo User 01**, and then choose **Select**.
+
+5. Select **Create**, and verify that **Contoso MAM Users** appears in **Groups | All groups**. Select **Refresh** if it is not listed yet.
+
 ### Task 1: Create an App protection policy for iOS/iPadOS devices
 
-1. On **SEA-SVR1**, if necessary, sign in as **Contoso\Administrator** with the password **Pa55w.rd**.
+1. On **LabVM**, you are already signed in.
 
 2. On the taskbar, select **Microsoft Edge**, type **https://intune.microsoft.com** in the address bar, and then press **Enter**.
 
-3. Sign in with the Office 365 Tenant admin credentials from the Home tab.
+3. Sign in with the **Username** and **Temporary Access Pass** from the **Environment** tab, if you are asked to.
 
 4. On the **Microsoft Intune admin center** page, select **Apps**.
 
@@ -39,7 +55,7 @@ All of the developers at Contoso have iPhones and iPads running the latest iOS/i
 
     ![](media/media/image2.png)
 
-6. In the details pane, select **+ Create policy** and then select **iOS/iPadOS**.
+6. In the details pane, select **+ Create** and then select **iOS/iPadOS**.
 
     ![](media/media/image3.png)
 
@@ -86,7 +102,7 @@ All of the developers at Contoso have iPhones and iPads running the latest iOS/i
 
     ![](media/media/image10.png)
 
-    > **Note:** An app protection policy with no assignment applies to no one. If you did not complete Lab 10, first create a **Security** group named **Contoso MAM Users** with **Assigned** membership and add **Cindy White** to it (**Groups → New group**), then return to this step.
+    > **Note:** An app protection policy with no assignment applies to no one. If **Contoso MAM Users** is not listed, complete **Task 0** first.
 
 14. On the **Review + create** tab, review the settings and select **Create**.
 
@@ -100,7 +116,7 @@ All of the developers at Contoso have iPhones and iPads running the latest iOS/i
 
 1. In the **Apps | Protection** blade, select **Outlook – Developers**.
 
-2. On the policy **Overview** page, review the **Properties** and confirm that:
+2. On the policy page, select **Properties** and confirm that:
 
     - **Apps** lists **Microsoft Outlook**
     - **Assignments** includes **Contoso MAM Users**
@@ -111,7 +127,7 @@ All of the developers at Contoso have iPhones and iPads running the latest iOS/i
 
 Complete this task only if you have an iPhone or iPad available.
 
-1. On the iOS/iPadOS device, open **Microsoft Outlook** and sign in as **Cindy@M365xXXXXXXX.onmicrosoft.com** (substitute **XXXXXXX** with your tenant name) with the password **P@55w.rd1234**.
+1. On the iOS/iPadOS device, open **Microsoft Outlook** and sign in as the **User 01 UPN** from the **Environment** tab, and enter the value shown as **User 01 Password** where **Enter Temporary Access Pass** is asked.
 
 2. When the message **Your organization is now protecting its data in this app** appears, select **OK**. If prompted, close Outlook and open it again.
 
@@ -119,6 +135,6 @@ Complete this task only if you have an iPhone or iPad available.
 
     Notice that the paste is blocked because only policy managed apps can receive Outlook data.
 
-4. On **SEA-SVR1**, in the Intune admin center, select **Apps → Monitor → App protection status** and confirm that Cindy is listed with the **Outlook – Developers** policy for iOS/iPadOS.
+4. On **LabVM**, in the Intune admin center, select **Apps → Monitor → App protection status** and confirm that Demo User 01 is listed with the **Outlook – Developers** policy for iOS/iPadOS.
 
 **Results**: After completing this exercise, you will have successfully configured and assigned an App protection policy for iOS/iPadOS devices.
