@@ -66,43 +66,41 @@ The architecture for this lab involves the following key components:
 
 - **Microsoft Cloud PKI:** A cloud-based certificate authority in the Intune Suite that issues and manages device certificates.
 
-## Getting Started with the Lab
-
-### Accessing Your Lab Environment
+## Accessing Your Lab Environment
 
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
 ![Image](media/n1.png)
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
 
 Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
 
-### Exploring Your Lab Resources
-
-To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
-
-![Image](media/gs3.png)
-
-### Managing Your Virtual Machine
-
-Feel free to **start, restart, or stop (2)** your virtual machines as needed from the **Resources (1)** tab. LabVM has an **open in new window** button; TestVM does not, so you open it from LabVM (see Lab 17).
-
-![Image](./media/gs5.png)
-
-### Utilizing the Split Window Feature
-
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
-
-![Image](./media/gs4.png)
-
-### Lab Guide Zoom In/Zoom Out
+## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
 ![Image](media/gs2.png)
 
-### Resize the Virtual Machine View
+## Exploring Your Lab Resources
+
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+
+![Image](media/gs3.png)
+
+## Managing Your Virtual Machine
+
+Feel free to **start, restart, or stop (2)** your virtual machines as needed from the **Resources (1)** tab. LabVM has an **open in new window** button; TestVM does not, so you open it from LabVM (see Lab 17).
+
+![Image](./media/gs5.png)
+
+## Utilizing the Split Window Feature
+
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
+
+![Image](./media/gs4.png)
+
+## Resize the Virtual Machine View
 
 Use the **slider (three vertical dots)** located between the **Virtual Machine** and the **Lab Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
 
