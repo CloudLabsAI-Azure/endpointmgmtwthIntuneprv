@@ -16,7 +16,7 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 ### Task 1: Enable TLS 1.2 using PowerShell script
 
-1. On **SEA-SVR1**, sign in as **Contoso\Administrator** with the password **Pa55w.rd**.
+1. On **SEA-SVR1**, sign in as **Contoso\azureuser**.
 
 2. On the Start menu, type **PowerShell**, right-click **PowerShell** and select **Run as administrator**.
 
@@ -64,7 +64,7 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 ### Task 2: Configure directory synchronization with Microsoft Entra Connect
 
-1. On **SEA-SVR1**, if necessary, sign in as **Contoso\Administrator** with the password **Pa55w.rd**.
+1. On **SEA-SVR1**, if necessary, sign in as **Contoso\azureuser** with the password **Pa55w.rd**.
 
 2. On the taskbar, select **Microsoft Edge**.
 
@@ -112,9 +112,9 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
     ![](media/media/image15.png)
 
-12. In the **AD forest account** window, select the **Create New AD Account** option. In the **ENTERPRISE ADMIN USERNAME** field, type **Contoso\Administrator**, and then type **Pa55w.rd** in the **PASSWORD** field. Select **OK**, and then select **Next**.
+12. In the **AD forest account** window, select the **Create New AD Account** option. In the **ENTERPRISE ADMIN USERNAME** field, type **CONTOSO\azureuser**, and then copy **LabVM Admin Password** from **Environment** tab and paste in the **PASSWORD** field. Select **OK**, and then select **Next**.
 
-    ![](media/media/image16.png)
+    ![](media/media/z11.png)
 
     ![](media/media/image17.png)
 
@@ -152,7 +152,7 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 ### Task 3: Review and assign licenses for device management
 
-1. On **TestVM**, navigate to the **Microsoft 365 admin center** window.
+1. On **SEA-SVR1**, navigate to the **Microsoft 365 admin center** window.
 
     ![](media/media/image23.png)
 
@@ -170,7 +170,7 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 ### Task 4: Setting Password of the user utilizing PowerShell
 
-1. On **TestVM**, right-click the **Start** button, and then select **Windows PowerShell (Admin)**.
+1. On **SEA-WS1**, right-click the **Start** button, and then select **Windows PowerShell (Admin)**.
 
     ![](media/media/image32.png)
 
@@ -368,7 +368,7 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
     ![](media/media/image65.png)
 
-5. On the **Add user** page, under **User name**, enter the email address of Allan DeYoung, **Cindy@XXXXXXXXXX.onmicrosoft.com** (substitute **XXXXXXX** with your tenant name), and then select **Add**.
+5. On the **Add user** page, under **User name**, enter the email address of Cindy White, **CindyW@XXXXXXXXXX.onmicrosoft.com** (substitute **XXXXXXX** with your tenant name), and then select **Add**.
 
     ![](media/media/p5s3.png) 
 
@@ -376,7 +376,7 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 6. In the Microsoft Intune admin center, in the navigation pane, select **Home**.
 
-    ![](media/media/image67.png)
+    ![](media/media/z10.png)
 
 7. Close Microsoft Edge.
 
