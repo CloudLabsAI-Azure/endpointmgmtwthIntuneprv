@@ -19,7 +19,7 @@ You have assigned Cindy White appropriate licenses and will now test the process
 
 ### Task 1: Automatically enroll a Windows device to Microsoft Intune
 
-1. Switch to **TestVm** and sign in as **azureuser** with the LabVM admin password.
+1. Switch to **SEA-WS1** and sign in as **azureuser** with the LabVM admin password.
 
     ![](media/media/image1.png)
 
@@ -139,7 +139,7 @@ You have assigned Cindy White appropriate licenses and will now test the process
 
     Note that for TestVM, the **Managed by** column displays **Intune** and the **Ownership** column displays **Corporate**.
 
-    ![](media/media/z8.png)
+    ![](media/media/image25.png)
 
     > **Note:** This view lists devices that are enrolled in Intune. Remember that you configured automatic enrollment between Microsoft Entra and Microsoft Intune, and because of that, any device that is joined or registered to Microsoft Entra is automatically enrolled in Microsoft Intune. Any devices joined prior to setting up enrollment are only joined or registered to Entra, but not enrolled in Intune.
 
@@ -149,8 +149,8 @@ You have assigned Cindy White appropriate licenses and will now test the process
 
     ![](media/media/image27.png)
 
-7. Take note of **TestVM**. Notice that the **Join Type** column displays **Microsoft Entra joined** and the **MDM** column displays **Microsoft Intune**.
+7. Take note of **SEA-WS1**. Notice that the **Join Type** column displays **Microsoft Entra joined** and the **MDM** column displays **Microsoft Intune**.
 
-    ![](media/media/z9.png)
+    ![](media/media/image28.png)
 
 **Results**: After completing this exercise, you will have successfully joined a Windows client to Microsoft Entra ID and verified that the device has automatically enrolled into Microsoft Intune.
