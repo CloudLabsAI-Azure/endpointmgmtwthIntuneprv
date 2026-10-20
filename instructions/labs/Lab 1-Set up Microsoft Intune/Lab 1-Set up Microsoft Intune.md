@@ -77,37 +77,76 @@ You've also been told that several more employees will be hired over the next co
 
     - Usage location: United States
 
-    ![](media/media/image8.png)
+      ![](media/media/image8.png)
 
-9. Select the user account of **Allan Deyoung** and click on Edit properties and update the Job information with the below details and then click on the Save button.
+1. On the **Users** page, select **+ New user** **(1)**, and then select **Create new user** **(2)**.
 
-    1. Job title- **IT Admin**
+   ![](media/media/p1s3.png)
 
-    2. Department - **IT**
+1. On the **Basics** tab of the **Create new user** page, enter the following details, and then select **Next: Properties** **(5)**:
 
-    ![](media/media/image9.png)
+   - **User principal name:** Enter **AllanD** **(1)**
+   - **Display name:** Enter **Allan Deyoung** **(2)**
+   - **Auto-generate password:** Clear the checkbox **(3)**
+   - **Password:** Enter **P@55w.rd1234** **(4)**
 
-    ![](media/media/image10.png)
+   ![](media/media/p1s4.png)
 
-10. Select the user account of **Joni Sherman** and click on Edit properties and update the Job information with the below details and then click on the Save button.
+1. On the **Properties** tab, enter the following details, and then select **Review + create** **(3)**:
 
-    1. Job title- **ParaLegal**
+   - **Job title:** Enter **IT Admin** **(1)**
+   - **Department:** Enter **IT** **(2)**
+   - **Usage Loacation** Enter **United states (3)**
 
-    2. Department - **Legal**
+     ![](media/media/p1s5.png)
 
-    ![](media/media/image11.png)
+1. On the **Review + create** tab, select **Create**.
 
-    ![](media/media/image12.png)
+1. Back on the **Users** page, select **+ New user** **(1)**, and then select **Create new user** **(2)** to create the second user.
 
-11. Select the user account of **Alex Wilber** and click on Edit properties and update the Job information with the below details and then click on the Save button.
+   ![](media/media/p1s6.png)
 
-    1. Job title - **Marketing Assistant**
+1. On the **Basics** tab, enter the following details, and then select **Next: Properties** **(5)**:
 
-    2. Department – **Marketing**
+   - **User principal name:** Enter **JoniS** **(1)**
+   - **Display name:** Enter **Joni Sherman** **(2)**
+   - **Auto-generate password:** Clear the checkbox **(3)**
+   - **Password:** Enter **P@55w.rd1234** **(4)**
 
-    ![](media/media/image13.png)
+     ![](media/media/p1s7.png)
 
-    ![](media/media/image14.png)
+1. On the **Properties** tab, enter the following details, and then select **Review + create** **(3)**:
+
+   - **Job title:** Enter **ParaLegal** **(1)**
+   - **Department:** Enter **Legal** **(2)**
+   - **Usage Loacation** Enter **United states (3)**
+
+     ![](media/media/p1s8.png)
+
+1. On the **Review + create** tab, select **Create**.
+
+1. Back on the **Users** page, select **+ New user** **(1)**, and then select **Create new user** **(2)** to create the third user.
+
+    ![](media/media/p1s9.png)
+
+1. On the **Basics** tab, enter the following details, and then select **Next: Properties** **(5)**:
+
+   - **User principal name:** Enter **AlexW** **(1)**
+   - **Display name:** Enter **Alex Wilber** **(2)**
+   - **Auto-generate password:** Clear the checkbox **(3)**
+   - **Password:** Enter **P@55w.rd1234** **(4)**
+
+     ![](media/media/p1s10.png)
+
+1. On the **Properties** tab, enter the following details, and then select **Review + create**:
+
+   - **Job title:** Enter **Marketing Assistant**
+   - **Department:** Enter **Marketing**
+   - **Usage Loacation** Enter **United states (3)**
+
+     ![](media/media/p1s11.png)
+
+1. On the **Review + create** tab, select **Create**.
 
 ### Task 2: Create users by using PowerShell
 
@@ -412,66 +451,6 @@ You have also been asked to modify the Company branding for the sign-in page.
     ![](media/media/image52.png)
 
 10. Close Windows PowerShell.
-
-### Task 3: Review licenses and modify company branding
-
-1. In the Microsoft Entra admin center, in the Navigation pane, expand **Identity**, then expand **Billing** and select **Licenses**.
-
-    Alternatively, go to <https://admin.microsoft.com/Adminportal/Home?referrer=entra#/licenses>.
-
-    ![](media/media/image53.png)
-
-2. On the **Licenses** page, under Subscriptions, check for all the available licenses.
-
-    ![](media/media/image54.png)
-
-    > **Note:** Take note of the current licenses available and assigned for **Enterprise Mobility + Security E5** and **Office 365 E5 (no Teams)**
-
-    ![](media/media/image55.png)
-
-3. In the Microsoft 365 admin center, On the left navigation pane select **Users** and then **Active users**.
-
-    ![](media/media/image56.png)
-
-4. In the user list, select **Cody Godinez**.
-
-    ![](media/media/image57.png)
-
-5. On the Cody Godinez page, select **Licenses and apps**
-
-    ![](media/media/image58.png)
-
-    Notice that Cody does not have any current license assignments.
-
-6. On the **Licenses and apps** page, select the check box next to **Enterprise Mobility + Security E5** and **Office 365 E5 (no Teams)** and click on **Save changes**.
-
-    ![](media/media/image59.png)
-
-    ![](media/media/image60.png)
-
-    **Note**: Repeat steps 4 to 8 for assigning licenses Enterprise Mobility + Security E5 and Office 365 E5 (no Teams) to Joni Sherman, Alex Wilber and Allan Deyoung in case they aren’t assigned the licenses.
-
-7. In the Microsoft Intune admin center, in the Navigation pane, expand **Teams & groups** and select **Active teams & groups**.
-
-    ![](media/media/image61.png)
-
-8. On the **Contoso_Managers** page, select **Licenses**.
-
-    ![](media/media/image62.png)
-
-    **Notice that the Contoso_Managers group does not have any current license assignments.**
-
-9. Click on the checkbox beside **Microsoft 365 E5** to assign the license to the team, click **Save changes**
-
-    ![](media/media/image63.png)
-
-    Take note of the users that are assigned the Office 365 E5 (no Teams) license. Notice the Assignment Paths column which indicates how license assignment is configured for each user. Edmund and Miranda both receive their license assignment from their membership in the Contoso_Managers group. You may need to select **Refresh** a couple of times to update the Assignment path column.
-
-    ![](media/media/image64.png)
-
-    ![](media/media/image65.png)
-
-10. Close Microsoft Edge.
 
 **Results**: After completing this exercise, you should have successfully created and managed groups, and assigned licenses.
 

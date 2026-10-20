@@ -26,9 +26,40 @@ Several users have asked to use their personal iOS, Android, and Windows devices
 
 ### Task 2: Perform Microsoft Entra registration
 
-1. Switch to **SEA-WS1** and sign in as **Admin** with the password **Pa55w.rd**.
+1. In the Azure portal, search for **Virtual Machines** in the top search bar, and then select **Virtual machines** under **Services**.
 
-    ![](media/media/image3.png)
+   ![](media/media/z1.png)
+
+1. On the **Virtual machines** page, select **TestVM**.
+
+   ![](media/media/z2.png)
+
+1. On the **TestVM** overview page, select **Connect** **(1)**, and then select **Connect** **(2)**.
+
+   ![](media/media/z3.png)
+
+1. On the **TestVM | Connect** page, under **Native RDP**, select **Download RDP file**. If the browser displays a warning, select **Keep**.
+
+   ![](media/media/z4.png)
+
+1. In the browser **Downloads** pane, select **Open file** under **TestVM.rdp**. In the **Remote Desktop Connection security warning** dialog box, select the **Clipboard** checkbox, and then select **Connect**.
+
+   ![](media/media/z5.png)
+
+1. Navigate to the **Environment** tab and copy the **LabVM Admin Username** and **LabVM Admin Password** values.
+
+   ![](media/media/z5.1.png)
+
+1. In the **Enter your credentials** dialog box, select **More choices**, and then select **Use a different account**. Enter the following credentials, and then select **OK**:
+
+   - **Username:** Enter **.\azureuser**
+   - **Password:** Paste the **LabVM Admin Password** that you copied in the previous step
+
+     ![](media/media/z6.png)
+
+1. In the **Remote Desktop Connection** dialog box, select **Yes** to connect despite the certificate errors.
+
+   ![](media/media/z7.png)
 
 2. On the taskbar, select **Start** and then select **Settings**.
 
