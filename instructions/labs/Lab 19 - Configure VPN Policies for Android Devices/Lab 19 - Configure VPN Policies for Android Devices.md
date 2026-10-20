@@ -6,10 +6,7 @@ In this lab, you will configure **Microsoft Tunnel** and a **VPN policy for Andr
 
 ### Prerequisites
 
-The following lab(s) must be completed before this lab:
-
-- Lab #1-Set up Microsoft Intune
-- Lab #10-Enable Mobile Application Management (MAM) *(recommended — creates the **Contoso MAM Users** group)*
+Your lab environment provides **LabVM** and the lab user. The VPN profile is assigned to the **Contoso MAM Users** group. If you have not created it, complete **Lab 18, Task 0** first.
 
 > **Note:** This lab configures Microsoft Tunnel and the Android VPN profile in Intune. A working VPN connection also needs a Linux server running the Microsoft Tunnel Gateway software and an Android device enrolled in Intune with Android Enterprise, neither of which is part of this lab environment. You will therefore create and assign the configuration, and review where its deployment status is reported, without connecting a device.
 
@@ -23,7 +20,7 @@ You have been assigned to create and deploy a VPN policy for Contoso's Android u
 
 ### Task 1: Configure the Microsoft Tunnel Gateway
 
-1. On **SEA-SVR1**, sign in to the **Microsoft Intune admin center** (**https://intune.microsoft.com**) as the tenant admin.
+1. On **LabVM**, sign in to the **Microsoft Intune admin center** (**https://intune.microsoft.com**) with the **Username** and **Temporary Access Pass** from the **Environment** tab, if you are not already signed in.
 
     ![](media/media/image1.png)
 
@@ -100,11 +97,11 @@ You have been assigned to create and deploy a VPN policy for Contoso's Android u
 
     ![](media/media/image16.png)
 
-3. Select **Configuration profiles**.
+3. Under **Manage devices**, select **Configuration**.
 
     ![](media/media/image17.png)
 
-4. Click **+ Create profile**.
+4. Select **Create**, and then **New Policy**.
 
     ![](media/media/image18.png)
 
@@ -135,7 +132,7 @@ You have been assigned to create and deploy a VPN policy for Contoso's Android u
 
     ![](media/media/image22.png)
 
-    > **Note:** If you did not complete Lab 10, create a **Security** group named **Contoso MAM Users** with **Assigned** membership and add **Cindy White** to it (**Groups → New group**). Assigning to a specific group rather than **All users** keeps the pilot limited to the users you choose.
+    > **Note:** If **Contoso MAM Users** is not listed, complete **Lab 18, Task 0**. Assigning to a specific group rather than **All users** keeps the pilot limited to the users you choose.
 
 9. On the **Review + create** tab, check all the details and click **Create**.
 
@@ -147,7 +144,7 @@ You have been assigned to create and deploy a VPN policy for Contoso's Android u
 
 1. In the **Microsoft Intune admin center**, go to **Devices → Android → Configuration profiles** and select **Contoso – Android VPN Policy**.
 
-2. On the profile **Overview** page, review the **Device and user check-in status** chart and the **Device status** and **User status** reports.
+2. On the profile **Overview** page, review the **Device and user check-in status** chart. The **Device assignment status** and **Per setting status** reports show the status of each device and setting.
 
     > **Note:** Because no Android Enterprise devices are enrolled in this lab environment, the counts show **0**. When an enrolled Android device for a member of **Contoso MAM Users** checks in, it appears here as **Succeeded**, **Error**, or **Conflict**.
 
