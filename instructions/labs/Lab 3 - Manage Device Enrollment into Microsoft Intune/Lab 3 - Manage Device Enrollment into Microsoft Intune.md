@@ -152,27 +152,9 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 ### Task 3: Review and assign licenses for device management
 
-1. On **SEA-SVR1**, navigate to the **Microsoft 365 admin center** window.
+1. On **TestVM**, navigate to the **Microsoft 365 admin center** window.
 
     ![](media/media/image23.png)
-
-2. Navigate and select **Billing**, then click on **Licenses**.
-
-    ![](media/media/image24.png)
-
-3. On the **Licenses** page, take note of the licenses that are available in the tenant.
-
-    ![](media/media/image25.png)
-
-4. Select and click on **Enterprise Mobility + Security E5**. Notice all the users that have been assigned this license. You can assign and remove licenses from this location.
-
-    ![](media/media/image26.png)
-
-    ![](media/media/image27.png)
-
-5. Select a user to see the licenses assigned to the user. Take note of the services included in the Enterprise Mobility + Security E5 license. **Microsoft Intune** is one of the supported services for this license.
-
-    ![](media/media/image28.png)
 
 6. In the **Microsoft 365 admin center** navigation pane, select **Users**, then select **Active users**.
 
@@ -182,19 +164,51 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
     ![](media/media/image30.png)
 
-8. On the **Cindy White** user page, click on **Licenses and apps**. Ensure that the **Usage location** field is set to **United States** and the following licenses **Enterprise Mobility + Security E5** and **Office 365 E5 (no Teams)** are assigned.
+8. On the **Cindy White** user page, click on **Licenses and apps**. Ensure that the **Usage location** field is set to **United States** and the following licenses **Intune P1** and **Office 365 E5 (no Teams)** are assigned.
 
-    ![](media/media/image31.png)
+    ![](media/media/p4s2.png)
 
 ### Task 4: Setting Password of the user utilizing PowerShell
 
-1. On **SEA-SVR1**, right-click the **Start** button, and then select **Windows PowerShell (Admin)**.
+1. On **TestVM**, right-click the **Start** button, and then select **Windows PowerShell (Admin)**.
 
     ![](media/media/image32.png)
 
 2. In the **User Account Control** dialog box, select **Yes**.
 
     ![](media/media/image33.png)
+
+1. Run the following commands to connect the modules
+
+    ```
+    Get-Module -ListAvailable Microsoft.Graph*
+    $env:PSModulePath -split ';'
+    ```
+
+    ```
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+    Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+
+    Install-Module PowerShellGet -Force -AllowClobber
+    ```
+
+    ```
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+    Install-Module Microsoft.Graph.Authentication, Microsoft.Graph.Users -Scope AllUsers -Force -AllowClobber -Verbose
+    ```
+
+    ```
+    Get-Module -ListAvailable Microsoft.Graph*
+    ```
+
+    ```
+    Import-Module Microsoft.Graph.Authentication
+    Import-Module Microsoft.Graph.Users
+
+    Connect-MgGraph -Scopes "Directory.ReadWrite.All","User.ReadWrite.All","Group.ReadWrite.All","RoleManagement.ReadWrite.Directory","Policy.ReadWrite.Authorization","Application.ReadWrite.All","offline_access"
+    ```
 
 3. In the **Windows PowerShell** window, type the following command, and then press **Enter**:
 
@@ -268,7 +282,7 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 5. On the **Platform settings** page, under **Personally owned devices**, select **Block** and click the **Next** button.
 
-    ![](media/media/image46.png)
+    ![](media/media/p4s1.png)
 
 6. On the **Scope tags** page, select **Next**.
 
@@ -354,9 +368,9 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
     ![](media/media/image65.png)
 
-5. On the **Add user** page, under **User name**, enter the email address of Allan DeYoung, **AllanD@M365xXXXXXXX.onmicrosoft.com** (substitute **XXXXXXX** with your tenant name), and then select **Add**.
+5. On the **Add user** page, under **User name**, enter the email address of Allan DeYoung, **Cindy@XXXXXXXXXX.onmicrosoft.com** (substitute **XXXXXXX** with your tenant name), and then select **Add**.
 
-    ![](media/media/image66.png)
+    ![](media/media/p5s3.png) 
 
     Allan is now allowed to enroll up to 1000 devices.
 
